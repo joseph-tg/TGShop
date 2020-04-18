@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="widescreen.css">
+    <title>Online Shop</title>
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="container">
+            <div class="head"><h1>Order Stuff</h1></div>
+            <div class="header-2">
+                <div>
+                    <input class="search btn" id="search" onkeyup="mySearch()" type="search" name="search" placeholder="Search...">
+                </div>
+                <div class="cart">
+                    <h3><a href="#" onclick="playAudio()" class="cart-content btn">Cart<input class="input" type="submit" value = "0" id="cart" ></a></h3>
+                </div>
+            </div>
+        </div>
+      
+    </header>
+   
+    <!-- Main Section -->
+    <section class="main-section">
+        <h3 id="itbo">Items To Be Ordered</h3>
+        <div class="products-container">
+            <article class="product p1">
+                <img src="img/city.jpg" alt="comps">
+                <div class="content">
+                    <h3 id="item"><a href="#"> Product 1</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price1" class="price-in" type="submit" value="900"> </h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(), addLikes1()" class="btn-l btn"><input type="submit" value="0" class="like" id="like1"> Likes</span>
+                        <span onclick="playAudio()" id="order" class="btn-c bc1 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no1" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br1 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product p2">
+                <img src="img/hotel.jpg" alt="comps">
+                <div class="content">
+                    <h3 id="item"><a href="#"> Product 2</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price2" class="price-in" type="submit" value="1200"></h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(),  addLikes2()" class="btn-l btn"><input type="submit" value="0" class="like" id="like2"> Likes</span>
+                        <span onclick="playAudio()" id="order" class="btn-c bc2 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no2" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br2 btn">Remove</span>
+                    </div>
+                </div>  
+            </article>
+            <article class="product p3">
+                <img src="img/comps.jpg" alt="comps">
+                <div class="content">
+                    <h3 id="item"><a href="#"> Product 3</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price3" class="price-in" type="submit" value="630"></h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(),  addLikes3()" class="btn-l btn"><input type="submit" value="0" class="like" id="like3"> Likes</span>
+                        <span onclick="playAudio()" class="btn-c bc3 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no3" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br3 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product p4">
+                <img src="img/city.jpg" alt="comps">
+                <div class="content">
+                    <h3 id="item">Product 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price4" class="price-in" type="submit" value="1400"></h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(),  addLikes4()" class="btn-l bl4 btn">
+                            <input type="submit" value="0" class="like" id="like4">
+                            Likes
+                        </span>
+                        <span onclick="playAudio()" class="btn-c bc4 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no4" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br4 btn">Remove</span>
+                    </div>
+                </div>
+            </article> 
+            <!-- next row -->
+            <article class="product p5">
+                <img src="img/bike.jpg" alt="comps">
+                <div class="content">
+                    <h3>Product 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price5" class="price-in" type="submit" value="700"> </h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(), addLikes5()" class="btn-l btn"><input type="submit" value="0" class="like" id="like5"> Likes</span>
+                        <span onclick="playAudio()" id="order" class="btn-c bc5 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no5" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br5 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product p6">
+                <img src="img/duthi.jpg" alt="comps">
+                <div class="content">
+                    <h3>Product 6</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price6" class="price-in" type="submit" value="1500"></h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(),  addLikes6()" class="btn-l btn"><input type="submit" value="0" class="like" id="like6"> Likes</span>
+                        <span onclick="playAudio()" id="order" class="btn-c bc6 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no6" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br6 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product p7">
+                <img src="img/tv.jpg" alt="comps">
+                <div class="content">
+                    <h3>Product 7</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price7" class="price-in" type="submit" value="700"></h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(),  addLikes7()" class="btn-l btn"><input type="submit" value="0" class="like" id="like7"> Likes</span>
+                        <span onclick="playAudio()" class="btn-c bc7 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no7" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br7 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product p8">
+                <img src="img/comps.jpg" alt="comps">
+                <div class="content">
+                    <h3>Product 8</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price8" class="price-in" type="submit" value="1000"></h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(),  addLikes8()" class="btn-l bl8 btn">
+                            <input type="submit" value="0" class="like" id="like8">
+                            Likes
+                        </span>
+                        <span onclick="playAudio()" class="btn-c bc8 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no8" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br8 btn">Remove</span>
+                    </div>
+                </div>
+            </article> 
+            <article class="product p9">
+                <img src="img/city.jpg" alt="comps">
+                <div class="content">
+                    <h3>Product 9</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price9" class="price-in" type="submit" value="800"> </h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(), addLikes9()" class="btn-l btn"><input type="submit" value="0" class="like" id="like9"> Likes</span>
+                        <span onclick="playAudio()" id="order" class="btn-c bc9 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no9" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br9 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product p10">
+                <img src="img/hotel.jpg" alt="comps">
+                <div class="content">
+                    <h3>Product 10</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
+                    earum distinctio.</p>
+                    <h4 id="price" class="price">Ksh <input id="price10" class="price-in" type="submit" value="1700"> </h4>
+                    <div class="btns1">
+                        <span onclick="playAudio(), addLikes10()" class="btn-l btn"><input type="submit" value="0" class="like" id="like10"> Likes</span>
+                        <span onclick="playAudio()" id="order" class="btn-c bc10 btn">Add To Cart</span>
+                    </div>
+                    <div class="btns2">
+                        <input onclick="playAudio()" id="price-no10" type="number" class="btn  btn-i input" value="1">
+                        <span onclick="playAudio()" id="order" class="btn-r br10 btn">Remove</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <hr>
+        <div class="final-steps">
+            <div class="total-price">
+                <h3 id="total-price"><input type="submit" class="btn total-price-in" value="Get Total Price">
+                    <i class="fas fa-chevron-right"></i><input id="cost" class="input btn-s" type="submit" value = "0">
+                </h3>
+            </div>
+            <div class="place-order">
+                <a href="index.html" ><input onclick="playAudio(), orderPlaced()" type="submit" value="Place Order" class="btn-r btn" ></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script> 
+        <script src="main.js"></script>
+</body>
+</html>
+
+
+
+ 
