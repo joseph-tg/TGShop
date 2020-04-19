@@ -61,6 +61,32 @@
         margin-top: 0rem;
     }
 
+    /* form part */
+    .section-c .final-steps {
+        padding-bottom: 2rem;
+        padding-bottom: 0;
+        margin-top: -1rem;
+    }
+
+    .section-c .final-steps .place-order {
+        float: right;
+        margin-top: 0rem;
+        margin-right: 0.2rem;
+    }
+
+    form .fields {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .main-footer {
+        margin-top: 5rem; 
+    }
+    
+
+
+
+/* For Mobile Phones */
 @media(max-width: 600px) {
     #main-header {
         background: var(--primary-color);
@@ -98,6 +124,7 @@
     }
 
 
+
     /* Products */
     .main-section {
             background: linear-gradient(0deg, var(--body-color), var(--primary-color));
@@ -108,7 +135,6 @@
         grid-gap: 0rem;
         margin: 1rem 0rem;
     }
-
     /* display flex items to be ordered */
     .section-c .products-container .active {
         display: grid;
@@ -146,4 +172,39 @@
     .main-section .products-container .product .content .btns2 .input {
         width: 2.8rem;
     } 
+
+    /* form part */
+    .section-c .final-steps {
+        display: inline;
+        padding-bottom: 2rem;
+        padding-bottom: 0;
+        margin-top: -1rem;
+    }
+
+    .section-c .final-steps .place-order {
+        float: left;
+        margin-top: -1.25rem;
+        margin-right: 0.2rem;
+    }
+
+    form .fields {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    form .fields .form {
+        width: 10.3rem;
+        margin: 5px;
+    }
+
+    .form-price { display: none;}
+
+    .section-c .final-steps .place-order .place-order-btn {
+        margin-top: 0.2rem;
+    }
+    
+    .main-footer {
+        margin-top: 5rem; 
+        font-size: 0.8rem;
+    }
 }
