@@ -7,7 +7,7 @@
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" media="screen and (max-width: 876px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="widescreen.css">
     <title>Online Shop</title>
 </head>
@@ -212,17 +212,45 @@
         <hr>
         <div class="final-steps">
             <div class="total-price">
-                <h3 id="total-price"><input type="submit" class="btn total-price-in" value="Get Total Price">
+                <div id="total-price"><input type="submit" class="btn total-price-in" value="Get Total Price">
                     <i class="fas fa-chevron-right"></i><input id="cost" class="input btn-s" type="submit" value = "0">
-                </h3>
+                </div>
             </div>
-            <div class="place-order">
-                <a href="index.html" ><input onclick="playAudio(), orderPlaced()" type="submit" value="Place Order" class="btn-r btn" ></a>
-            </div>
+            <!-- Get some inputs from user -->
+            <form class="place-order" name="contact" method="POST" data-netlify="true">
+                <div class="fields">
+                    <div class="form">
+                        <input type="text" name="name" required autocomplete="off" id="">
+                        <label for="name" class="label-name" > 
+                            <span class="content-name">Name</span>
+                        </label>
+                    </div>
+                    <div class="form">
+                        <input type="email" name="name" required autocomplete="off" id="">
+                        <label for="name" class="label-name" > 
+                            <span class="content-name">Email</span>
+                        </label>
+                    </div>
+                    <div class="form form-price">
+                        <input type="text" name="price" id="input-price" class="input-price">
+                        <label for="name" class="label-name" > 
+                            <span class="content-name">Price</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="place-order-btn">
+                    <a href="index.html"><input onclick="playAudio(), orderPlaced()" type="submit" value="Place Order" class="btn-r btn" ></a>
+                </div>
+            </form>
         </div>
     </section>
-    
-
+<!-- Footer -->
+    <footer class="main-footer">
+        <div class="content">
+             copyright&copy;2020, TGShop, All Rights Reserved
+        </div>
+    </footer>
+<!-- footer -->
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
