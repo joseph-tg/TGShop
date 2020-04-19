@@ -112,11 +112,12 @@ h3 {
 }
 
 
-/* Products */
+/* Products Main Section Containing the all the products*/
 .main-section {
     padding: 0 0.5rem;
     margin-top: -1rem;
     padding-top: 1.2rem;
+    min-height: 77vh;
 }
 .main-section .products-container {
     display: grid;
@@ -269,11 +270,13 @@ h3 {
 
 /* Final Steps */
 .section-c .final-steps {
-    display: block;
-    padding: 1rem;
+    display: inline;
+    padding: 0.5rem;
+    padding-bottom: 0;
 }
-.section-c .final-steps > div {
-    margin: 1rem 0;
+.section-c .final-steps .total-price {
+    margin: 0.5rem;
+    margin-bottom: 0em;
 }
 .section-c .final-steps .total-price {
     text-align: center;
@@ -289,9 +292,11 @@ h3 {
     text-align: left;
 }
 
-
+/* place order and contact */
 .section-c .final-steps .place-order {
     float: right;
+    margin-top: -3rem;
+    margin-right: 0.5rem;
 }
 .section-c .final-steps .total-price .total-price-in {
     border: none;
@@ -303,7 +308,7 @@ h3 {
 
 .section-c .final-steps .total-price i {
     font-size: 1rem;
-    padding: 0, 0.5rem;
+    padding: 0 0.5rem;
     color: #444;
     cursor: pointer;
 }
@@ -320,4 +325,86 @@ h3 {
 }
 .section-c .final-steps .place-order .btn-r:active {
     background: rgba(0, 133, 0, .8);
+}
+
+/* Input Fields */
+form .fields {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+form .fields .form {
+    width: 12rem;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+form .fields .form-price {
+    width: 2.5rem;
+}
+form .form input {
+    width: 120%;
+    height: 100%;
+    color: #444;
+    padding-top: 1.7rem;
+    border: none;
+    outline: none;
+    font-size: 14px;    
+    background: var(--secondary-color);
+}
+form .form label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    pointer-events: none;  
+    border-bottom: 1px solid black;
+}
+form .form label::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    bottom: -1px;
+    left: 0;
+    border-bottom: 1px solid #5fabd3;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+.content-name {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: all 0.1s ease;
+}
+
+form .form input:focus + .label-name .content-name,
+form .form input:valid + .label-name .content-name {
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: #437591;
+}
+form .form input:focus + .label-name::after, 
+form .form input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+.section-c .final-steps .place-order .place-order-btn {
+    float: right;
+    margin-top: 0.5rem;
+}
+
+
+/* footer */
+.main-footer {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    background: #333;
+    color: #fff;
+    bottom: 0;
+}
+.main-footer .content {
+    padding: 1rem;
+    text-align: center;
 }
