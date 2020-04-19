@@ -341,6 +341,14 @@ $(document).ready(function(){
 
 
 // alert user his product has been placed successfuly
-function orderPlaced() {
-    alert("Your Order has been placed successfully");
-};
+// function orderPlaced() {
+//     alert("Your Order has been placed successfully");
+// };
+
+// getting total price into the form input by passing it to a hidden input
+$(document).on('click','#total-price' , function(){
+    var costValue = document.querySelector('#cost');
+    var costInput = document.querySelector('#input-price');
+    
+    costInput.value = costValue.value;
+});
