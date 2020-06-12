@@ -181,6 +181,14 @@
         margin-top: -1rem;
     }
 
+    .section-c .final-steps .go-back-btn {
+        margin-top: 2.2rem;
+    }
+    .section-c .final-steps .go-back-btn .btn {
+        padding: 0.2rem 0.3rem;
+        cursor: pointer;
+    }
+
     .section-c .final-steps .place-order {
         float: left;
         margin-top: -1.25rem;
@@ -208,3 +216,4 @@
         font-size: 0.8rem;
     }
 }
+
