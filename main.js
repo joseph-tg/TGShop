@@ -1,4 +1,5 @@
 
+
 // Sticky menu background
 window.addEventListener('scroll', function(){
     if (window.scrollY > 90){
@@ -10,21 +11,21 @@ window.addEventListener('scroll', function(){
 });
 
 // search button to filter input for products
-function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("search");
-    filter = input.value.toUpperCase();
-    ul = document.getElementsByClassName("product");
-    li = ul.getElementsByTagName("h3");
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-  }
+// function myFunction() {
+//     var input, filter, ul, li, a, i;
+//     input = document.getElementById("search");
+//     filter = input.value.toUpperCase();
+//     ul = document.getElementsByClassName("product");
+//     li = ul.getElementsByTagName("h3");
+//     for (i = 0; i < li.length; i++) {
+//       a = li[i].getElementsByTagName("a")[0];
+//       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+//         li[i].style.display = "";
+//       } else {
+//         li[i].style.display = "none";
+//       }
+//     }
+//   }
 // end!
 
 
@@ -112,6 +113,12 @@ btnAdd10.addEventListener('click', () =>{
 $(document).on('click','.cart-content' , function(){
     $('.main-section').addClass('section-c');
 });
+
+// on clicking go back button undo what was done in the above code 
+$(document).on('click','.go-back-btn' , function(){
+    $('.main-section').removeClass('section-c');
+});
+
 
 // remove item from cart .. remove class active by clicking button remove
 $(document).on('click','.br1' , function(){
